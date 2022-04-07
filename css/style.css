@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    height: 100%;
+}
+
+h2 {color: #fff}
+
+p {color: #9c9c9c;}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 73px;
+    font-size: 32px;
+    margin-bottom: 61px;
+}
+
+.perfis {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.perfil-img {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.perfis .perfil img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.img img:hover {
+    transform: scale(1.2);
+}
+
+.perfil-img {
+    transition: border .2s;
+}
+
+.perfil > .perfil-img:hover {
+    border: 1.5px solid #fff;
+}
+
+.perfis .perfil + .perfil {
+    margin-left: 26px;
+}
+
+.perfil-img-novo {
+    background: #1E1E20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-img-novo img {
+    width: 70px;
+    height: 70px;
+}
+
+.perfil:hover .img {
+    color: #fff;
+}
+
+#plus {
+    width: 150px;
+    height: 160px;
+    opacity: 40%;
+    transition: opacity 0.2s linear;
+}
+
+#plus:hover {
+    opacity: 100%;
+}
+
+.gerenciar {
+    display: flex;
+    justify-content: center;
+    margin-top: 136px;
+}
+
+.gerenciar button {
+    border: 1.5px solid #fff;
+    border-radius: 8px;
+    padding: 10px 35px;
+    background: transparent;
+    color: #fff;
+    transition: background linear 0.2s;
+}
+
+.gerenciar button:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media (max-width:530px){
+    .perfil-img {
+        max-width: 130px;
+        height: 130px;
+    }
+
+    .perfis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        
+    }
+
+    .perfis .perfil + .perfil {
+        margin-left: 0;
+    }
+
+    .perfil {
+        margin-bottom: 10px;
+    }
+
+    .gerenciar {
+        margin-top: 30px;
+    }
+
+
+
+}
